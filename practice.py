@@ -11,9 +11,14 @@ import pytesseract
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setGeometry(200, 300, 400, 500)
+        self.setGeometry(400, 300, 600, 500)
         self.setWindowIcon(QIcon("pyqt5icons/sunny.jpg"))
         label = QLabel("asdasd", self)
+        piximap = QPixmap("pyqt5icons/guiimage.jpg")
+        piximap.scaled(label.width(), label.height())
+        label.setGeometry(0, 0, 550, 450)
+        label.setPixmap(piximap)
+        label.show()
 
     def initUi():
         pass

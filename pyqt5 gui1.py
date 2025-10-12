@@ -9,24 +9,19 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(700, 250, 700, 700)
-        self.setWindowIcon(QIcon("guiimage.jpg"))
+        self.setWindowIcon(QIcon("pyqt5icons/guiimage.jpg"))
         self.initUI()
-
-        label = QLabel("TEXT TEXT", self)
-        label.setGeometry(0, 0, 300, 300)  # display text
-        label.setFont(QFont("Arial", 20))
-        label.setStyleSheet("background-color: red;")
 
         label = QLabel(self)
         label.setGeometry(0, 0, 700, 700)
 
-        pixmap = QPixmap("guiimage.jpg")
-        label.setPixmap(pixmap)  # display image
-        label.setScaledContents(True)
-        label.setGeometry((label.width() - label.width()) // 2,
-                          (label.height() - label.height()) // 2,
-                          label.width(),
-                          label.height())
+        # pixmap = QPixmap("pyqt5icons/guiimage.jpg")
+        # label.setPixmap(pixmap)  # display image
+        # label.setScaledContents(True)
+        # label.setGeometry((label.width() - label.width()) // 2,
+        #                   (label.height() - label.height()) // 2,
+        #                   label.width(),
+        #                   label.height())
 
     def initUI(self):
         central_widget = QWidget()
