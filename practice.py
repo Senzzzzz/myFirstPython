@@ -18,6 +18,7 @@ class Client(QMainWindow):
     def initUI(self):
         window = QWidget()
 
+        self.label = QLabel("Placeholder", self)
         self.line_edit = QLineEdit(self)
         self.line_edit.setGeometry(0, 0, 150, 25)
         self.line_edit.setPlaceholderText("Enter a new task to add: ")
