@@ -28,6 +28,7 @@ class Client(QMainWindow):
         self.button.clicked.connect(self.on_click)
 
         layout = QHBoxLayout()
+        layout.addWidget(self.line_edit)
         window.setLayout(layout)
 
     def on_click(self):
